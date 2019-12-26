@@ -8,7 +8,9 @@ environment:
 
 dependencies:
   alamo_core:
-    path: ../alamo_core/
+    git:
+      url: git://github.com/Succ3s/AlamoBot.git
+      path: alamo_core/
 
 dev_dependencies:
   pedantic: ^1.8.0
