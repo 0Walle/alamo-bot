@@ -8,12 +8,16 @@ abstract class Context {
 
   Context(this.message, this.bot, {this.arguments = const [], dm = false});
 
-  Future<Context> send(String msg, {bool mention = false, bool dm = false});
+  Future<Context> send(String msg,
+      {bool mention = false, bool dm = false, Embed embed});
 
-  Future<Context> edit(String msg, {bool mention = false});
+  Future<Context> edit(String msg, {bool mention = false, Embed embed});
 
   void delete();
 
   void input(String ask, void Function(Message) callback,
       {Duration timeout = const Duration(seconds: 5)}); // ask for input
+
+  Embed embed();
+  MessageBuilder builder();
 }

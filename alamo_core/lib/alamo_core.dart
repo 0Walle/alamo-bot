@@ -5,5 +5,6 @@ export "src/Entities.dart";
 export "src/Bot.dart";
 export "src/Command.dart";
 export "src/Listener.dart";
+export "src/MessageUtils.dart";
 
 export "src/util.dart" show InputListener;
