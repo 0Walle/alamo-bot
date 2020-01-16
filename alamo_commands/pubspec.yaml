@@ -10,7 +10,6 @@ dependencies:
   alamo_core:
     git:
       url: git://github.com/Succ3s/AlamoBot.git
-      ref: message-utils
       path: alamo_core/
 
 dev_dependencies:
